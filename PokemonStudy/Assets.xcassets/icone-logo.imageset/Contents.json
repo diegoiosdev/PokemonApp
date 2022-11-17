@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "bagas3.jpg",
+      "filename" : "icone-logo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "bagas3@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "bagas3@3x.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

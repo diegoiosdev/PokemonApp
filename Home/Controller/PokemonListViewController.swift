@@ -20,7 +20,7 @@ class PokemonListViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
    }
 }
 
@@ -35,11 +35,9 @@ extension PokemonListViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: PokemonTableViewCell? = tableView.dequeueReusableCell(withIdentifier: PokemonTableViewCell.identifier, for: indexPath) as? PokemonTableViewCell
-        
-        cell?.namePokemon.text = pokemons[indexPath.row].name
+        cell?.textLabelProject.text = pokemons[indexPath.row].name
         cell?.attackTitle.text = "Ataque: \(pokemons[indexPath.row].attack)"
         cell?.defenseTitle.text = "Defesa: \(pokemons[indexPath.row].defense)"
-        
         if let urlString = pokemons[indexPath.row].imageUrl as? String {
             if let imageURL = URL(string: urlString){
                 DispatchQueue.global().async {
