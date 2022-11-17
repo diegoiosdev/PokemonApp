@@ -1,6 +1,5 @@
 import UIKit
 import SnapKit
-import SwiftUI
 
 class PokemonTableViewCell: UITableViewCell {
 
@@ -19,22 +18,6 @@ class PokemonTableViewCell: UITableViewCell {
         image.image = UIImage(named: "love")
         return image
     }()
-    
-//        lazy var pokemonFavorite:UIButton = {
-//            let button = UIButton()
-//            button.translatesAutoresizingMaskIntoConstraints = false
-//            button.setTitle("Favorito", for: .normal)
-////            button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
-//            button.setTitleColor(.black, for: .normal)
-//            button.layer.shadowRadius = 1
-//            button.layer.borderWidth = 1
-//            button.layer.cornerRadius = 15
-//            button.layer.shadowColor = UIColor.black.cgColor
-//            button.layer.masksToBounds = false
-//            button.clipsToBounds = true
-//            //            button.addTarget(self, action: #selector(self.tappedBagasButton), for: .touchUpInside)
-//            return button
-//        }()
     
     lazy var namePokemon: UILabel = {
         let label = UILabel()
