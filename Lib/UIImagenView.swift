@@ -1,8 +1,14 @@
-//
-//  UIImagenView.swift
-//  PokemonStudy
-//
-//  Created by Diego Fernando Siqueira Silva on 17/11/22.
-//
+import UIKit
 
-import Foundation
+extension UIImageView {
+    
+    static func imageViewProject(named: String? = nil ) -> UIImageView {
+        let imageView = UIImageView()
+        if let named = named {imageView.image = UIImage(named: named)}
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            imageView.contentMode = .scaleAspectFit
+            imageView.clipsToBounds = true
+            return imageView
+    }
+}
+

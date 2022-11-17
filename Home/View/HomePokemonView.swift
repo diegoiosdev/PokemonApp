@@ -16,8 +16,8 @@ class HomePokemonView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 50)
-        label.text = "Pokedex"
+        label.font = UIFont.boldSystemFont(ofSize: 45)
+        label.text = "Pokemon"
         return label
     }()
     
@@ -59,15 +59,14 @@ class HomePokemonView: UIView {
     
     private func setConstraints() {
         NSLayoutConstraint.activate([
-            
-            self.titleHome.leadingAnchor.constraint(equalTo:self.safeAreaLayoutGuide.leadingAnchor, constant:15),
-            self.titleHome.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 2),
+            self.titleHome.leadingAnchor.constraint(equalTo:self.safeAreaLayoutGuide.leadingAnchor, constant:25),
+            self.titleHome.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 15),
             
             self.homeImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             self.homeImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 320),
             self.homeImageView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
-            self.homeImageView.heightAnchor.constraint(equalToConstant: 80),
-            self.homeImageView.widthAnchor.constraint(equalToConstant: 80),
+            self.homeImageView.heightAnchor.constraint(equalToConstant: 70),
+            self.homeImageView.widthAnchor.constraint(equalToConstant: 70),
 
             self.tableView.topAnchor.constraint(equalTo:homeImageView.topAnchor, constant: 65),
             self.tableView.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor),

@@ -20,7 +20,6 @@ class HomePokemonTableViewCell: UITableViewCell {
         return label
     }()
 
-
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubview()
@@ -38,7 +37,6 @@ class HomePokemonTableViewCell: UITableViewCell {
     
     private func setUpConstraints() {
         NSLayoutConstraint.activate([
-            
             self.pokemonImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             self.pokemonImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             self.pokemonImageView.heightAnchor.constraint(equalToConstant: 100),

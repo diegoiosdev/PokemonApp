@@ -11,7 +11,6 @@ struct PokemonManager {
         let urlString = "https://pokedex-bb36f.firebaseio.com/pokemon.json"
         if let url = URL(string: urlString){
             let session = URLSession(configuration: .default)
-            
             let task = session.dataTask(with: url) { data, response, error in
                 if error != nil {
                     print("\(String(describing: error))")
@@ -20,7 +19,6 @@ struct PokemonManager {
                 if let dadosSeguros = data?.analisarDados(quitarString: "null,") {
                     if let listaPokemon = self.analisarJSON(dadosPokemon: dadosSeguros){
                         print("lista pokemon: ", listaPokemon)
-                        
                         delegate?.mostrarListaPokemon(lista: listaPokemon)
                     }
                 }
