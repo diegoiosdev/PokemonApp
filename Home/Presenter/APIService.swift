@@ -42,7 +42,6 @@ struct PokemonManager {
     }
 }
 
-
 extension Data {
     func analisarDados(quitarString palavra: String) -> Data? {
         let dataAsString = String(data: self, encoding: .utf8)

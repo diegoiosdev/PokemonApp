@@ -55,19 +55,6 @@ extension PokemonListViewController: UITableViewDelegate, UITableViewDataSource 
     }
 }
 
-//extension PokemonListViewController:HomePokemonViewProtocol {
-//
-//    func actionfavoretsButton() {
-//        let favoriteViewController = FavoriteViewController()
-//        self.navigationController?.pushViewController(favoriteViewController, animated: true)
-//    }
-//
-//    func actionBagasButton() {
-//        let bagasListViewController = BagasListViewController()
-//           self.navigationController?.pushViewController(bagasListViewController, animated: true)
-//    }
-//}
-
 extension PokemonListViewController: pokemonManagerDelegate {
     func mostrarListaPokemon(lista: [Pokemon]) {
         pokemons = lista

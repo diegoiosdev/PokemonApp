@@ -21,10 +21,10 @@ class LoginViewController: UIViewController {
 extension LoginViewController:UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-//        print("textFieldDidBeginEditing")
     }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
-//        print("textFieldDidEndEditing")
+
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

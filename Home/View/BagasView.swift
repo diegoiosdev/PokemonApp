@@ -19,7 +19,6 @@ class BagasView: UIView {
         button.clipsToBounds = true
         button.layer.cornerRadius = 10.4
         button.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 104/255, alpha: 0.5)
-//        button.addTarget(self, action: #selector(self.tappedloginButton), for: .touchUpInside)
        return button
     }()
     

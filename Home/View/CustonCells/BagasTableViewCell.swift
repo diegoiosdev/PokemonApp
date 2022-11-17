@@ -34,10 +34,6 @@ class BagasTableViewCell: UITableViewCell {
         self.contentView.addSubview(bagas)
     }
     
-    public func setUpCell(data: ModelTest){
-        self.bagas.text = data.name
-        self.bagaImageView.image = UIImage(named: data.nameImage)
-    }
         
     private func setUpConstraints() {
         NSLayoutConstraint.activate([
