@@ -1,4 +1,5 @@
 import UIKit
+import SnapKit
 
 protocol HomePokemonViewProtocol: AnyObject {
     func actionBagasButton()
@@ -41,7 +42,7 @@ class HomePokemonView: UIView {
          addSubview(titleHome)
          addSubview(homeImageView)
          addSubview(tableView)
-         setConstraints()
+         configContraintsView()
     }
 
     public func configTableViewProtocol(delegate:UITableViewDelegate, dataSouse: UITableViewDataSource){
@@ -57,22 +58,27 @@ class HomePokemonView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setConstraints() {
-        NSLayoutConstraint.activate([
-            self.titleHome.leadingAnchor.constraint(equalTo:self.safeAreaLayoutGuide.leadingAnchor, constant:25),
-            self.titleHome.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 15),
+   func configContraintsView() {
+        
+        self.homeImageView.snp.makeConstraints { make in
+            make.top.equalTo(25)
+            make.trailing.equalToSuperview().inset(50)
+            make.height.equalTo(70)
+            make.width.equalTo(70)
+        }
+        
+        self.tableView.snp.makeConstraints { make in
+            make.top.equalTo(self.homeImageView.snp.top).offset(65)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalToSuperview()
+        }
+        
+        self.titleHome.snp.makeConstraints { make in
+            make.leading.equalToSuperview().offset(25)
+            make.top.equalToSuperview().offset(45)
             
-            self.homeImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.homeImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 320),
-            self.homeImageView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
-            self.homeImageView.heightAnchor.constraint(equalToConstant: 70),
-            self.homeImageView.widthAnchor.constraint(equalToConstant: 70),
-
-            self.tableView.topAnchor.constraint(equalTo:homeImageView.topAnchor, constant: 65),
-            self.tableView.leftAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leftAnchor),
-            self.tableView.rightAnchor.constraint(equalTo: self.safeAreaLayoutGuide.rightAnchor),
-            self.tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor),
-        ])
+        }
     }
 }
 
