@@ -1,12 +1,10 @@
-
 import UIKit
 
 class NewHomeViewController: UIViewController {
-
-    var newHomeView: NewHomeView?
-     
-    var pokemons: [NewPokemon] = []
     
+    var newHomeView: NewHomeView?
+    var newpokemons: [NewPokemon] = []
+
     override func loadView() {
         self.newHomeView = NewHomeView()
         self.view = self.newHomeView
@@ -14,23 +12,20 @@ class NewHomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        view.backgroundColor = .white
         RestRepository.load()
     }
 }
 
-extension NewHomeViewController: UITableViewDelegate, UITableViewDataSource {
-    
+extension NewHomeViewController: UITableViewDelegate, UITableViewDataSource  {
+  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pokemons.count
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NewTableViewCell", for: indexPath)
-        cell.textLabel?.text = "teste table"
-        return cell
+        let cell  = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "teste"
+        return  cell
     }
 }

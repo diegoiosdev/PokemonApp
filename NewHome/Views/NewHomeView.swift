@@ -5,7 +5,6 @@ class NewHomeView: UIView {
     
     lazy var titleHome: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 45)
         label.text = "Pokemon"
@@ -14,16 +13,13 @@ class NewHomeView: UIView {
     
     lazy var homeImageView: UIImageView = {
         let image  = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.image = UIImage(named: "Bulbasaur")
+        image.image = UIImage(named:"Bulbasaur")
         image.contentMode = .scaleAspectFit
         return image
     }()
 
     lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(NewHomeTableViewCell.self, forCellReuseIdentifier: NewHomeTableViewCell.identifier)
         return tableView
     }()
 
@@ -45,7 +41,7 @@ class NewHomeView: UIView {
     }
     
    func configContraintsView() {
-        
+
         self.homeImageView.snp.makeConstraints { make in
             make.top.equalTo(25)
             make.trailing.equalToSuperview().inset(50)
@@ -53,17 +49,17 @@ class NewHomeView: UIView {
             make.width.equalTo(70)
         }
         
-        self.tableView.snp.makeConstraints { make in
-            make.top.equalTo(self.homeImageView.snp.top).offset(65)
-            make.left.equalToSuperview()
-            make.right.equalToSuperview()
-            make.bottom.equalToSuperview()
-        }
-        
+       self.tableView.snp.makeConstraints { make in
+           make.top.equalTo(self.homeImageView.snp.top).offset(80)
+           make.left.equalToSuperview()
+           make.right.equalToSuperview()
+           make.bottom.equalToSuperview()
+       }
+
         self.titleHome.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(25)
             make.top.equalToSuperview().offset(45)
-            
+
         }
     }
 }

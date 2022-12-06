@@ -9,7 +9,7 @@ protocol HomePokemonViewProtocol: AnyObject {
 class HomePokemonView: UIView {
     
     var delegate: HomePokemonViewProtocol?
-    func delegate(delegate: HomePokemonViewProtocol?){
+    func delegate(delegate: HomePokemonViewProtocol?) {
         self.delegate = delegate
     }
     
