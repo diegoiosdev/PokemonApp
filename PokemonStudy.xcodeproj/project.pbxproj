@@ -10,6 +10,7 @@
 		42A9C713E6621C920E5FB684 /* Pods_PokemonStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954D4E47812E0BC067221C97 /* Pods_PokemonStudy.framework */; };
 		60854B3DDAEB2295A3BEEEF6 /* Pods_PokemonStudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A871B7387D48F61B661D3BFE /* Pods_PokemonStudyTests.framework */; };
 		D10347F2C9088E3F902D228A /* Pods_PokemonStudy_PokemonStudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96025F33BC3D34FD08DA4A00 /* Pods_PokemonStudy_PokemonStudyUITests.framework */; };
+		DB0405D029492D5B00800966 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0405CF29492D5B00800966 /* Extension+String.swift */; };
 		DB052449293F8C4D006C6C77 /* NewHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB052448293F8C4D006C6C77 /* NewHomeViewController.swift */; };
 		DB245E1028E5F38F00D8EE3F /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB245E0F28E5F38F00D8EE3F /* Pokemon.swift */; };
 		DB4D2B3B29268A5B001FF177 /* UIImagenView+Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4D2B3A29268A5B001FF177 /* UIImagenView+Views.swift */; };
@@ -29,7 +30,6 @@
 		DBB235D228D37A6D004DA61B /* HomePokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB235D128D37A6D004DA61B /* HomePokemonView.swift */; };
 		DBBC587428DB26AB00435191 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DBBC587328DB26AB00435191 /* SnapKit */; };
 		DBBC587928DB667900435191 /* pokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC587828DB667900435191 /* pokemonTableViewCell.swift */; };
-		DBCCB1D328F05BC0002A0ECF /* TabBarProjetoBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCB1D228F05BC0002A0ECF /* TabBarProjetoBase.swift */; };
 		DBDF5F2D28E645CD00BE2B76 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF5F2C28E645CD00BE2B76 /* ApiClient.swift */; };
 		DBDF5F3028E7916900BE2B76 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBDF5F2F28E7916900BE2B76 /* Alamofire */; };
 /* End PBXBuildFile section */
@@ -59,6 +59,7 @@
 		954D4E47812E0BC067221C97 /* Pods_PokemonStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96025F33BC3D34FD08DA4A00 /* Pods_PokemonStudy_PokemonStudyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonStudy_PokemonStudyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A871B7387D48F61B661D3BFE /* Pods_PokemonStudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonStudyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0405CF29492D5B00800966 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		DB052448293F8C4D006C6C77 /* NewHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHomeViewController.swift; sourceTree = "<group>"; };
 		DB245E0F28E5F38F00D8EE3F /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		DB4D2B3A29268A5B001FF177 /* UIImagenView+Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagenView+Views.swift"; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		DBB235BA28D27ED8004DA61B /* PokemonStudyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonStudyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DBB235D128D37A6D004DA61B /* HomePokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePokemonView.swift; sourceTree = "<group>"; };
 		DBBC587828DB667900435191 /* pokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokemonTableViewCell.swift; sourceTree = "<group>"; };
-		DBCCB1D228F05BC0002A0ECF /* TabBarProjetoBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProjetoBase.swift; sourceTree = "<group>"; };
 		DBDF5F2C28E645CD00BE2B76 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		DFDB50DD7D7ADF266E2E016C /* Pods-PokemonStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonStudy.debug.xcconfig"; path = "Target Support Files/Pods-PokemonStudy/Pods-PokemonStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		EFB8CCDC23CE1901BD3F0E0D /* Pods-PokemonStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonStudy.release.xcconfig"; path = "Target Support Files/Pods-PokemonStudy/Pods-PokemonStudy.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +138,14 @@
 				15344DECBC11138F57CC6DB7 /* Pods-PokemonStudyTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB0405CE29492D4700800966 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DB0405CF29492D5B00800966 /* Extension+String.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		DB245E0C28E5F18E00D8EE3F /* Home */ = {
@@ -232,10 +240,10 @@
 		DBB2358B28D27ED6004DA61B = {
 			isa = PBXGroup;
 			children = (
+				DB0405CE29492D4700800966 /* Extension */,
 				DB79B123293568B500703D28 /* NewHome */,
 				DB4D2B3929268A3E001FF177 /* Lib */,
 				DB245E0C28E5F18E00D8EE3F /* Home */,
-				DBCCB1D128F05B88002A0ECF /* TabBarProjetoBase */,
 				DBB2359628D27ED6004DA61B /* PokemonStudy */,
 				DBB235AD28D27ED8004DA61B /* PokemonStudyTests */,
 				DBB235B728D27ED8004DA61B /* PokemonStudyUITests */,
@@ -290,14 +298,6 @@
 				DBB2359B28D27ED6004DA61B /* PokemonListViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		DBCCB1D128F05B88002A0ECF /* TabBarProjetoBase */ = {
-			isa = PBXGroup;
-			children = (
-				DBCCB1D228F05BC0002A0ECF /* TabBarProjetoBase.swift */,
-			);
-			path = TabBarProjetoBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,12 +510,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCCB1D328F05BC0002A0ECF /* TabBarProjetoBase.swift in Sources */,
 				DB79B13429363BF500703D28 /* NewHomeView.swift in Sources */,
 				DBB2359C28D27ED6004DA61B /* PokemonListViewController.swift in Sources */,
 				DBDF5F2D28E645CD00BE2B76 /* ApiClient.swift in Sources */,
 				DB4D2B3D2926B7D8001FF177 /* UILabel+Views.swift in Sources */,
 				DB4D2B3B29268A5B001FF177 /* UIImagenView+Views.swift in Sources */,
+				DB0405D029492D5B00800966 /* Extension+String.swift in Sources */,
 				DBB2359828D27ED6004DA61B /* AppDelegate.swift in Sources */,
 				DB052449293F8C4D006C6C77 /* NewHomeViewController.swift in Sources */,
 				DB245E1028E5F38F00D8EE3F /* Pokemon.swift in Sources */,
@@ -698,9 +698,8 @@
 				INFOPLIST_FILE = PokemonStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -708,9 +707,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.PokemonStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -726,9 +728,8 @@
 				INFOPLIST_FILE = PokemonStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -736,9 +737,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.PokemonStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -755,9 +759,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.PokemonStudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokemonStudy.app/PokemonStudy";
 			};
 			name = Debug;
@@ -775,9 +782,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.PokemonStudyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokemonStudy.app/PokemonStudy";
 			};
 			name = Release;
@@ -793,9 +803,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.PokemonStudyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = PokemonStudy;
 			};
 			name = Debug;
@@ -811,9 +824,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.PokemonStudyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = PokemonStudy;
 			};
 			name = Release;
