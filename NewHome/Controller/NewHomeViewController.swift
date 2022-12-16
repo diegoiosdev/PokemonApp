@@ -13,33 +13,46 @@ class NewHomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         newHomeView?.configTableViewProtocol(delegate: self, dataSouse: self)
         restRepository.delegate = self
-        
         restRepository.GetNewPokemons()
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
    }
-    
 }
+
 extension NewHomeViewController: UITableViewDataSource, UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Pokemon com mais força de ataque"
+        }
+        return "Pokemon"
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 145
+        return 90
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 6
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:NewHomeTableViewCell? = tableView.dequeueReusableCell(withIdentifier: NewHomeTableViewCell.identifier, for: indexPath) as? NewHomeTableViewCell
-//        cell?.pokemonLabel.text =  "Ataque: \(newpokemons[indexPath.row])"
-        cell?.imageView?.image = UIImage(named: "Bulbasaur")
+        cell?.name.text = "Bulbasaur"
+        cell?.imagePokemon.image = UIImage(named: "Bulbasaur")
+        cell?.accessoryType = .disclosureIndicator
         return cell ?? UITableViewCell()
     }
 }

@@ -13,8 +13,8 @@ class NewHomeTableViewCell: UITableViewCell {
     
     lazy var name: UILabel = {
         let label = UILabel()
-        label.textColor = .red
-        label.font = .systemFont(ofSize: 15, weight: .regular)
+        label.textColor = .green
+        label.font = .systemFont(ofSize: 20, weight: .semibold)
         return label
     }()
    
@@ -29,25 +29,24 @@ class NewHomeTableViewCell: UITableViewCell {
     }
     
      func addSubview() {
-         self.contentView.addSubview(imagePokemon)
-         self.contentView.addSubview(name)
+         contentView.addSubview(imagePokemon)
+         contentView.addSubview(name)
     }
     
     func configContraintsTableView() {
         
         self.imagePokemon.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()
             make.leading.equalToSuperview()
             make.trailing.equalToSuperview().inset(255)
             make.height.equalTo(120)
+            make.width.equalTo(120)
         }
         
         self.name.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(150)
-            make.centerY.equalToSuperview().offset(25)
-            make.trailing.equalToSuperview().inset(50)
-            make.bottom.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.centerX.equalToSuperview().offset(25)
         }
     }
 }

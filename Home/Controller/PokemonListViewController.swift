@@ -25,6 +25,11 @@ class PokemonListViewController: UIViewController {
 }
 
 extension PokemonListViewController: UITableViewDelegate, UITableViewDataSource  {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 145
     }

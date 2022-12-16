@@ -4,7 +4,7 @@ import SnapKit
 class NewHomeView: UIView {
     
     lazy var tableView: UITableView = {
-        let tableView = UITableView()
+        let tableView = UITableView(frame:.zero, style: .insetGrouped)
         tableView.register(NewHomeTableViewCell.self, forCellReuseIdentifier: NewHomeTableViewCell.identifier)
         return tableView
     }()
@@ -13,15 +13,16 @@ class NewHomeView: UIView {
         super.init(frame: frame)
         addSubView()
         configContraints()
+        tableView.backgroundColor = .systemTeal
     }
     
     public func configTableViewProtocol(delegate:UITableViewDelegate, dataSouse: UITableViewDataSource) {
         self.tableView.delegate = delegate
         self.tableView.dataSource = dataSouse
     }
-
+    
      func addSubView() {
-           addSubview(tableView)
+         addSubview(tableView)
     }
     
     required init?(coder: NSCoder) {
@@ -29,7 +30,6 @@ class NewHomeView: UIView {
     }
     
     private func configContraints() {
-
        self.tableView.snp.makeConstraints { make in
            make.top.equalToSuperview()
            make.left.equalToSuperview()

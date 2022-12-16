@@ -1,11 +1,5 @@
-//
-//  Extension+String.swift
-//  PokemonStudy
-//
-//  Created by Diego Fernando Siqueira Silva on 13/12/22.
-//
-
 import UIKit
+
 extension String {
     func removeWhiteSpace() -> String {
         return replace(string: " ", replacement:"")
@@ -16,9 +10,8 @@ extension String {
     }
 
     func isValidEmail() -> Bool {
-        let emailRegEX = "[A-Z0-9a-Z._+]+@[1234567890OKGTYU8IOKJNJBREHGYU8IOK]"
+        let emailRegEX = "teste@gmail.com"
         let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEX)
         return emailTest.evaluate(with: self)
     }
-
 }
